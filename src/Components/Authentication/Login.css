@@ -1,0 +1,65 @@
+.login {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    z-index: 1; 
+    transition: 0.3s;
+}
+
+.animate{
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+.animate:hover{
+    transform: translateY(-5px);
+}
+
+
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+
+.btn-primary {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+
+.input-group-text {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.success-messages {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 1.5em; /* Increases the font size */
+    color: green; /* Sets the text color to green */
+    /* margin-top: 10px; Adds space above the message */
+    text-align: center; /* Centers the text */
+    /* background-color: rgba(0, 255, 0, 0.1); Adds a light green background */
+    /* border: 1px solid green; Adds a green border */
+    /* padding: 10px; Adds padding around the text */
+    /* border-radius: 5px; Rounds the corners */
+  }
+  

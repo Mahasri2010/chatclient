@@ -1,0 +1,97 @@
+/* ChatList container */
+.chatlist-container {
+  margin-left: 75px;
+  padding: 10px;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow on the right */
+  border-right: 2px solid whitesmoke;  /* Divider between ChatList and ChatView */
+  height: 100vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+   background-color: #eae6df;
+   /* border-right: 20px; */
+}
+
+/* Contact List */
+.contact-list {
+  width: 100%;
+  max-width: 500px; /* Limit width */
+  flex-grow: 1; /* Allow list to expand and fill remaining space */
+  overflow-y: auto; /* Allow scrolling when content exceeds the container height */
+  padding: 10px;
+  border-radius: 8px;
+  /* background-color: #f0f0f0; */
+  scrollbar-width: none;  /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none;  /* Hides scrollbar in IE and Edge */
+}
+
+/* Webkit browsers (Chrome, Safari) - Hide scrollbar */
+.contact-list::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar */
+}
+
+/* Optional: Add more styling for the contact items */
+.contact-item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  background-color: rgb(225, 219, 219);
+  background-color: white;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-details h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.add-contact-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.invite-button {
+  background-color: #25D366;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.invite-button:hover {
+  background-color: #20b359;
+}
+
+.no-messages {
+  color: #888;
+  font-size: 14px;
+}
+

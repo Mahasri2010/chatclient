@@ -1,0 +1,204 @@
+.nav {
+  background-color: #ffffff; /*White background */
+  border: px solid; /* Adjust thickness as needed */
+  border-right: 5px solid;
+  /* border-image: linear-gradient(to right, #6a11cb, #2575fc) 1;  */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  /* border-radius: 20px; */
+  
+  
+}
+
+.nav a:hover {
+  color: #6a11cb; /* Matches gradient color */
+}
+
+
+
+
+/* Navbar container */
+.navbar-container {
+  width: 80px;
+  height: 100vh;
+  /* background-color: #343a40; */
+  border-right: 1px solid #dcdcdc;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out;
+  padding-top: 20px;
+  overflow: hidden;
+
+
+}
+
+/* Expanded Navbar */
+.navbar-container.expanded {
+  width: 150px;
+  /* background-color: #495057; */
+  /* background-color: #6a11cb; */
+  background-color: #2575fc;
+}
+
+/* Navbar Top Section */
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Menu Icon */
+.navbar-menu-icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: invert(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-menu-icon:hover img {
+  transform: scale(1.1);
+}
+
+/* Navbar Items */
+.navbar-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Items - Expanded */
+.navbar-container.expanded .navbar-items {
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* Navbar Link */
+.navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  /* color: white; */
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #adb5bd;
+}
+
+/* Navbar Icons */
+.navbar-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: invert(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+/* Profile Picture Container */
+.profile-pic-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s, height 0.3s;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+/* Expanded Profile Section */
+.navbar-container.expanded .profile-section {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* Expanded Profile Name */
+.navbar-container.expanded .profile-section span {
+  /* color: white; */
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Settings and Logout Section */
+.settings-logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 100px;
+}
+
+.navbar-container.expanded .settings-logout {
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+/* Modal Dialog */
+.modal-dialog {
+  max-width: 400px;
+  margin: auto;
+}
+
+.modal-content {
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 90vh;
+  overflow: hidden;
+}
+.modal-title {
+  color: black;
+  font-weight: bold;
+}
+
+.image-upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+  width:120px;
+  height:120px;
+  margin: 0 auto;
+}

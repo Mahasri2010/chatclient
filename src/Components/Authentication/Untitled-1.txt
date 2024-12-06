@@ -1,0 +1,1351 @@
+/* Navbar Container - Default (Collapsed) */
+.navbar-container {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  transition: width 0.3s ease-in-out;
+  border-right: 1px solid #dcdcdc;
+}
+
+/* Navbar Container - Expanded */
+.navbar-container.expanded {
+  width: 250px; /* Expanded state width */
+}
+
+/* Navbar Top Section (Menu Icon) */
+.navbar-top {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+/* Nav Items */
+.navbar-items {
+  width: 100%; /* Takes full width */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Nav Items - Expanded State */
+.navbar-container.expanded .navbar-items {
+  align-items: flex-start; /* Align items to the left */
+  padding-left: 20px;
+}
+
+/* Nav Links */
+.navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nav Icons */
+.navbar-link img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Profile Section - Default (Collapsed) */
+.profile-pic-container {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Profile Picture - Collapsed State */
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Profile Section - Expanded State */
+.navbar-container.expanded .profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.navbar-container.expanded .profile-pic {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-container.expanded .profile-pic-container span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Menu Icon Hover Effect */
+.navbar-menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-menu-icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/* Navbar container */
+.navbar-container {
+  width: 80px;
+  height: 100vh;
+  /* background-color: #2A2F32; */
+  background-color:#343a40;
+  border-right: 1px solid #dcdcdc;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out;
+  padding-top: 20px;
+
+  overflow: hidden;
+}
+
+/* Expanded Navbar */
+.navbar-container.expanded {
+  width: 250px;
+  background-color: #495057;
+}
+
+/* Navbar Top Section */
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Menu Icon */
+.navbar-menu-icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: invert(100%); /* Make icon white */
+  transition: transfrom 0.3s ease-in-out;
+}
+.navbar-menu-icon :hover img {
+  transform: scale(1.1);
+}
+
+/* Navbar Items */
+.navbar-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+  
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Items - Expanded */
+.navbar-container.expanded.navbar-items {
+  align-items: flex-start;
+  padding-left: 20px;
+}m
+
+.navbar-items li {
+  margin-bottom: 30px;
+}
+/* Navbar Link */
+.navbar-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color:white;
+  transition: color 0.3s ;
+}
+
+.navbar-link:hover {
+  color: #adb5bd;
+}
+
+/* Navbar Icons */
+.navbar-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: invert(100%); /* Make icon white */
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+.profile-pic-container {
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  border-radius: 50%; 
+  overflow: hidden; /* Crop overflow outside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: width 0.3s , height 0.3s;
+}
+
+.image-upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+  width:120px;
+  height:120px;
+  margin: 0 auto;
+}
+.modal-dialog{
+  max-width: 400px;
+  margin:  auto;
+}
+.modal-content {
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 90vh;
+  overflow: hidden;
+} 
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  /* padding-bottom: 10px; */
+}
+
+.navbar-container.expanded.profile-section {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-container.expanded.profile-pic-container {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-container.expanded.profile-section span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold; 
+}
+
+/* Settings and Logout Section */
+.settings-logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 100px; /* Positioned above profile */
+}
+
+.navbar-container.expanded .settings-logout {
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+
+// import express from 'express';
+// import { Auth,RefreshToken } from './authModel.js'; // Import the Auth model
+// import jwt from 'jsonwebtoken'; // For token generation
+
+// const JWT_SECRET = process.env.JWT_SECRET; // Use environment variables in production
+
+// const AuthRouter = express.Router();
+
+
+// // ================== SIGNUP ==================
+// AuthRouter.post('/signup', async (req, res) => {
+//   try {
+//     const { email, password } = req.body;
+
+//     // Check if all fields are provided
+//     if (!email || !password) {
+//       return res.status(400).json({ error: 'Email and password are required' });
+//     }
+
+//     // Check if password meets the minimum length requirement
+//     if (password.length < 4) {
+//       return res.status(400).json({ error: 'Password must be at least 4 characters' });
+//     }
+
+//     // Check if the user already exists
+//     const existingUser = await Auth.findOne({ email });
+//     if (existingUser) {
+//       return res.status(400).json({ error: 'User already exists' });
+//     }
+
+//     // Create a new user and save to the database
+//     const newUser = new Auth({ email, password });
+//     await newUser.save();
+
+//     // Generate a JWT token to log the user in immediately (optional)
+//     const token = jwt.sign({ userId: newUser._id }, JWT_SECRET, { expiresIn: '1h' });
+
+//     res.status(201).json({ message: 'User registered successfully', token });
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// });
+
+// // import { authenticateToken } from './authMiddleware.js';
+
+// // AuthRouter.get('/protected-route', authenticateToken, (req, res) => {
+// //   res.json({ message: 'This is a protected route!' });
+// // });
+
+
+// AuthRouter.post("/logout", async (req, res) => {
+//   const { userId } = req.body; // Pass userId in the request
+
+//   try {
+//     // Update user's online status and last seen time
+//     await Profile.findOneAndUpdate(
+//       { userId },
+//       { online: false, lastSeen: new Date() },
+//       { new: true }
+//     );
+
+//     res.json({ message: "Logged out successfully" });
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// });
+
+
+
+// // ================== LOGIN ==================
+// AuthRouter.post('/login', async (req, res) => {
+//   try {
+//     const { email, password } = req.body;
+
+//     // Check if both email and password are provided
+//     if (!email || !password) {
+//       return res.status(400).json({ error: 'Email and password are required' });
+//     }
+
+//     // Find the user by email
+//     const user = await Auth.findOne({ email });
+//     if (!user) {
+//       return res.status(400).json({ error: 'Invalid email or password' });
+//     }
+
+//     // Compare passwords
+//     const isMatch = await user.comparePassword(password);
+//     if (!isMatch) {
+//       return res.status(400).json({ error: 'Invalid email or password' });
+//     }
+
+//     // Generate a JWT token
+//     const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+
+//     res.json({ message: 'Login successful', token });
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// });
+
+// export default AuthRouter;
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import './Login.css';  
+// import { useNavigate } from 'react-router-dom';
+
+// const Login = () => {
+
+//   const navigate = useNavigate('')
+//   const [isLogin, setIsLogin] = useState(true);
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
+//   const [confirmPassword, setConfirmPassword] = useState('');
+
+
+
+//   const toggleForm = () => {
+//     setIsLogin(!isLogin);
+//   }
+
+//   const handleLogin = async (event) => {
+//     event.preventDefault();
+//     try {
+//       const response = await axios.post('http://127.0.0.1:4001/login', { email, password });
+//       localStorage.setItem('token', response.data.token); // Store token
+//       const profileSet = response.data.profileSet; // Check if profile is set
+//       navigate(profileSet ? '/chat' : '/profile-setup'); // Navigate based on profile status
+//     } catch (error) {
+//       console.error('Login failed:', error);
+//       alert('Invalid credentials');
+//     }
+//   };
+
+//   // Handle Signup
+//   const handleSignup = async (event) => {
+//     event.preventDefault();
+//     if (password !== confirmPassword) {
+//       alert('Passwords do not match!');
+//       return;
+//     }
+//     try {
+//       await axios.post('http://127.0.0.1:4001/signup', { email, password });
+//       navigate('/profile-setup'); // Redirect to profile setup after signup
+//     } catch (error) {
+//       console.error('Signup failed:', error);
+//       alert('Signup error. Try again.');
+//     }
+//   }
+
+
+//   return (
+//     <div className='login d-flex justify-content-center align-items-center vh-100'>
+//       <div className='animate card p-4 shadow' style={{ minWidth: '400px', maxWidth: '500px', borderRadius: '15px' }}>
+//         <h2 className='text-center'>{isLogin ? 'Login' : 'SignUp'}</h2>
+//         {isLogin ? (
+//           <form onSubmit={handleLogin}>
+//             <div className='input-group mb-3'>
+//               <span className='input-group-text'><i className="fas fa-envelope"></i></span>
+//               <input
+//                 type="email"
+//                 value={email}
+//                 onChange={e => setEmail(e.target.value)}
+//                 className='form-control'
+//                 placeholder='Enter your email'
+//                 required
+//               />
+//             </div>
+//             <div className='mb-3'>
+//               <label className='form-label'>Password</label>
+//               <input
+//                 type="password"
+//                 value={password}
+//                 onChange={e => setPassword(e.target.value)}
+//                 className='form-control'
+//                 placeholder='Enter your password'
+//                 required
+//               />
+//             </div>
+//             <div className='d-grid'>
+//               <button type='submit' className='btn btn-primary rounded-pill'>Login</button>
+//             </div>
+//           </form>
+//         ) : (
+//           <form onSubmit={handleSignup}>
+//             <div className='input-group mb-3'>
+//               <span className='input-group-text'><i className="fas fa-envelope"></i></span>
+//               <input
+//                 type="email"
+//                 value={email}
+//                 onChange={e => setEmail(e.target.value)}
+//                 className='form-control'
+//                 placeholder='Enter your email'
+//                 required
+//               />
+//             </div>
+//             <div className='mb-3'>
+//               <label htmlFor='loginPassword'>Password</label>
+//               <input
+//                 type="password"
+//                 id='loginPassword'
+//                 value={password}
+//                 onChange={e => setPassword(e.target.value)}
+//                 className='form-control'
+//                 placeholder='Enter your password'
+//                 required
+//               />
+//             </div>
+//             <div className='mb-3'>
+//               <label>Confirm Password</label>
+//               <input
+//                 type="password"
+//                 value={confirmPassword}
+//                 onChange={e => setConfirmPassword(e.target.value)}
+//                 className='form-control'
+//                 placeholder='Confirm your Password'
+//               />
+//             </div>
+//             <div className='d-grid'>
+//               <button type='submit' className='btn btn-primary rounded-pill'>Sign Up</button>
+//             </div>
+//           </form>
+//         )}
+
+//         <button className='btn btn-link mt-3' onClick={toggleForm}>
+//           {isLogin ? "Don't have an account? Sign Up" : 'Already have an account? Login'}
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Login;
+
+
+
+// import express from 'express'
+// import jwt from 'jsonwebtoken'
+// import crypto from 'crypto'
+// import { Auth, RefreshToken } from './authModel.js'
+
+// const AuthRouter = express.Router()
+
+// AuthRouter.get('/generate/key/', async (request, response) => {
+
+//   const key = crypto.randomBytes(64).toString('hex')
+
+//   response.json(key)
+
+// })
+
+// // ================== SIGNUP ==================
+
+// AuthRouter.post('/signup/', async (request, response) => {
+
+//   console.log(request.body, "Signup")
+
+//   // Check if password meets the minimum length requirement
+//   // if (password.length < 4) {
+//   //   return res.status(400).json({ error: 'Password must be at least 4 characters' });
+//   // }
+
+//   const all_user = await Auth.find({})
+//   console.log(all_user,"all")
+
+//   const { email } = request.body.email
+
+//     // Check if all fields are provided
+//     // if (!email || !password) {
+//     //   return response.status(400).json({ error: 'Email and password are required' });
+//     // }
+
+//   const user_check = all_user.find(user => user.email === email)
+
+//   console.log(user_check, "usercheck create")
+
+//   if (user_check === undefined) {
+
+//     const new_user = new Auth(request.body)
+
+//     await new_user.save()
+
+//     response.json("User Registered successfully")
+//   }
+
+//   else {
+//     response.json("user with the usename already exists!")
+//   }
+
+// })
+
+// // ================== LOGIN ==================
+
+// AuthRouter.post('/login/', async (request, response) => {
+
+//   const { email, password } = request.body
+
+//   console.log(request.body, "Login")
+
+//   // Check if both email and password are provided
+//   //     if (!email || !password) {
+//   //       return res.status(400).json({ error: 'Email and password are required' });
+//   //     }
+
+//   //     // Find the user by email
+//   //     const user = await Auth.findOne({ email });
+//   //     if (!user) {
+//   //       return res.status(400).json({ error: 'Invalid email or password' });
+//   //     }
+
+//   //     // Compare passwords
+//   //     const isMatch = await user.comparePassword(password);
+//   //     if (!isMatch) {
+//   //       return res.status(400).json({ error: 'Invalid email or password' });
+//   //     }
+
+//   const all_user = await Auth.find({})
+
+//   const user_check = all_user.find(user => user.email === email)
+
+//   console.log(user_check, "usercheck validate")
+
+//   if (user_check === undefined) response.json({
+
+//     status: false,
+//     message: "Invalid email"
+//   })
+
+//   else {
+
+//     if (user_check.password === password) {
+
+
+//       const user = {
+
+//         name: email
+//       }
+//       const access_token = jwt.sign(user, process.env.Access_tokenkey, { expiresIn: "30s" })
+//       console.log(access_token)
+
+//       const refresh_token = jwt.sign(user, process.env.Refresh_tokenkey)
+//       console.log(refresh_token)
+
+//       const new_refresh_token = new RefreshToken({
+
+//         refresh_token: refresh_token
+//       })
+
+//       await new_refresh_token.save()
+
+//       response.json({
+//         status: true,
+//         message: "valid user",
+//         access_token: access_token,
+//         refresh_token: refresh_token,
+//         userdata: user_check,
+
+//       })
+//     }
+
+
+//     else {
+//       response.json({
+
+//         status: false,
+//         message: "Invalid Password"
+//       })
+//     }
+
+//   }
+
+// })
+
+// // ================== LOGOUT ==================
+
+// AuthRouter.post('/logout/', async (request, response) => {
+
+
+//   const refresh_token = request.body.refresh_token
+
+//   const all_refresh_tokens = await RefreshToken.find({})
+
+//   try {
+//     // Update user's online status and last seen time
+//     await Profile.findOneAndUpdate(
+//       { userId },
+//       { online: false, lastSeen: new Date() },
+//       { new: true }
+//     );
+
+//     response.json({ message: "Logged out successfully" });
+//   } catch (error) {
+//     response.status(500).json({ error: error.message });
+//   }
+
+//   let select_token = all_refresh_tokens.find(token => token.refresh_token === refresh_token)
+
+//   await RefreshToken.findByIdAndDelete(select_token._id)
+
+//   response.status(200).json({ message: " refersh token deleted" })
+
+
+// })
+
+
+// AuthRouter.post('/token/', async (request, response) => {
+
+//   // console.log(request.body)
+
+//   const refresh_token = request.body.refresh_token
+
+//   if (refresh_token === null) {
+
+//     return response.status(401).json("no token found")
+//   }
+
+
+//   const all_refresh_tokens = await RefreshToken.find({ refresh_token: refresh_token })
+
+//   if (all_refresh_tokens.length === 0) {
+
+//     return response.status(403).json("invalid token")
+//   }
+
+
+//   jwt.verify(refresh_token, process.env.Refresh_tokenkey, (error, user) => {
+
+//     if (error) {
+//       return response.status(403).json("token verification failed")
+//     }
+
+//     const access_token = jwt.sign({ name: user.name }, process.env.Access_tokenkey, { expiresIn: '30s' })
+
+//     response.json({
+
+//       access_token: access_token
+//     })
+//   })
+
+
+// })
+
+// export default AuthRouter;
+
+
+import React, { useState,useEffect } from 'react';
+import './Login.css';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Ensure Axios is imported
+
+const Login = ({ setView }) => {
+
+  const navigate = useNavigate();
+  const userId = localStorage.getItem("userId")
+  const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [errorMessage,setErrorMessage] = useState('')
+  // const [loading, setLoading] = useState(false); // Loading state
+
+  // Email Validation Function
+  const validateEmail = (email) => /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email)
+
+  const toggleForm = () => {
+    setIsLogin(!isLogin);
+    setErrorMessage('')
+  };
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+  
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid email.');
+      return;
+    }
+  
+    const user_data = { email, password };
+    try {
+      const response = await axios.post('http://127.0.0.1:4001/Auth/login/', user_data);
+      axios.patch(`http://127.0.0.1:4001/Profile/status/${userId}`, { online: true, lastSeen: null })
+      .then(response => {
+        console.log(response.data.message);
+      });
+      localStorage.setItem('Bearer', response.data.access_token);
+      localStorage.setItem('refresh_token', response.data.refresh_token);
+  
+      if (response.data.status) {
+        navigate('/app/*');
+        setView(true);
+      }else{
+        setErrorMessage(response.data.message) //show backend message if status is false
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        setErrorMessage("Invalid user"); // Update state to show this message
+      } else {
+        setErrorMessage("An error occurred. Please try again.");
+      }
+    }
+  };
+  
+  const handleSignup = async (event) => {
+    event.preventDefault();
+  
+    if (password !== confirmPassword) {
+      setErrorMessage('Passwords do not match!');
+      return;
+    }
+  
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid email.');
+      return;
+    }
+  
+    const user_data = { email, password };
+    try {
+      const response = await axios.post('http://127.0.0.1:4001/Auth/signup/', user_data);
+      axios.patch(`http://127.0.0.1:4001/Profile/status/${userId}`, { online: true, lastSeen:null })
+      .then(response => {
+        console.log(response.data.message);
+      });
+      localStorage.setItem('Bearer', response.data.access_token);
+      localStorage.setItem('refresh_token', response.data.refresh_token);
+      localStorage.setItem('userId', response.data._id);
+  
+      navigate('/Profile');
+      setView(true);
+    } catch (error) {
+      if (error.response && error.response.status === 400) {
+        // Assuming the backend sends a 400 status for validation errors
+        setErrorMessage(error.response.data.message); // Display error message from backend
+      } else if (error.response && error.response.status === 409) {
+        setErrorMessage("User already exists");
+      } else {
+        setErrorMessage("An error occurred. Please try again.");
+      }
+    }
+  };
+  
+
+
+useEffect(() => {
+  const fetchToken = async () => {
+    const refresh_token = localStorage.getItem('refresh_token');
+    if (!refresh_token) return;
+
+    try {
+      const response = await axios.post('http://127.0.0.1:4001/Auth/token/', { refresh_token });
+      localStorage.setItem('Bearer', response.data.access_token);
+    } catch (error) {
+      console.error("Token refresh failed", error);
+    }
+  };
+
+  fetchToken();
+  const interval = setInterval(fetchToken, 30000);
+  return () => clearInterval(interval);
+}, []);
+
+  return (
+    <div className='login d-flex justify-content-center align-items-center vh-100'>
+      <div className='animate card p-4 shadow' style={{ minWidth: '400px', maxWidth: '500px', borderRadius: '15px' }}>
+        <h2 className='text-center'>{isLogin ? 'Login' : 'Sign Up'}</h2>
+
+      {/* Display error message if present */}
+      {errorMessage && <p className="error-message text-danger text-center">{errorMessage}</p>}
+
+        {isLogin ? (
+          <form onSubmit={handleLogin}>
+            <div className='input-group mb-3'>
+              <span className='input-group-text'><i className="fas fa-envelope"></i></span>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                className='form-control'
+                placeholder='Enter your email'
+                required
+              />
+            </div>
+            <div className='mb-3'>
+              <label className='form-label'>Password</label>
+              <input
+                type="password"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                className='form-control'
+                placeholder='Enter your password'
+                required
+              />
+            </div>
+            <div className='d-grid'>
+              <button type='submit' className='btn btn-primary rounded-pill' /* disabled={loading}*/ >
+                { /*loading ? 'Logging in...' :*/ 'Login'}
+              </button>
+            </div>
+          </form>
+        ) : (
+          <form onSubmit={handleSignup}>
+            <div className='input-group mb-3'>
+              <span className='input-group-text'><i className="fas fa-envelope"></i></span>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                className='form-control'
+                placeholder='Enter your email'
+                required
+              />
+            </div>
+            <div className='mb-3'>
+              <label htmlFor='signupPassword'>Password</label>
+              <input
+                type="password"
+                id='signupPassword'
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                className='form-control'
+                placeholder='Enter your password'
+                required
+              />
+            </div>
+            <div className='mb-3'>
+              <label>Confirm Password</label>
+              <input
+                type="password"
+                value={confirmPassword}
+                onChange={e => setConfirmPassword(e.target.value)}
+                className='form-control'
+                placeholder='Confirm your Password'
+                required
+              />
+            </div>
+            <div className='d-grid'>
+              <button type='submit' className='btn btn-primary rounded-pill' /*disabled={loading}*/ > {/*loading ? 'Signing up...' :*/ 'Sign Up'}
+              </button>
+            </div>
+          </form>
+        )}
+        <button className='btn btn-link mt-3' onClick={toggleForm}>
+          {isLogin ? "Don't have an account? Sign Up" : 'Already have an account? Login'}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
+
+
+
+
+/* For Chat component layout */
+
+/* .chatlist-content { */
+  /* height: 60vh; Adjust to fit layout */
+ /* overflow-y: auto;  Enable scrolling */
+ /* margin-top: 10px;
+ border-top: 1px solid #ddd;
+} */
+ .chatlist-container {
+  margin-left: 75px;
+  padding: 10px;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow on the right */
+  border-right: 2px solid #ddd;  /* Divider between ChatList and ChatView #ddd; */
+ }
+ 
+ .contact-list {
+  
+  width: 100%;
+  max-width: 500px;
+  /* background-color: #f0f0f0; */
+  /* max-height: 400px; */
+  border-radius: 8px;
+  padding: 10px;
+
+  max-height: 100%;
+  flex-grow: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Hides scrollbar in IE and Edge */
+  scrollbar-width: none;  /* Hides scrollbar in Firefox */
+ 
+ }
+
+ /* Webkit browsers (Chrome, Safari) - Hide scrollbar */
+.contact-list::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar */
+}
+
+.contact-item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.contact-name {
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.last-message {
+  color: #888;
+  margin: 0;
+}
+
+
+
+import React, { useState, useEffect, useRef } from 'react';
+import InputEmoji from 'react-input-emoji';
+import axios from 'axios';
+import './ChatView.css';
+
+const ChatView = ({ contact }) => {
+  const [messages, setMessages] = useState([]);
+  const [newMessage, setNewMessage] = useState('');
+  const [onlineStatus, setOnlineStatus] = useState('');
+  const messageEndRef = useRef(null);
+
+  // Scroll to the bottom of messages whenever a new one is added
+  const scrollToBottom = () => {
+    messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(scrollToBottom, [messages]);
+
+  useEffect(() => {
+    if (contact) {
+      // Fetch message history for the contact
+      axios.get(`http://127.0.0.1:4001/messages/${contact.id}`)
+        .then(response => setMessages(response.data))
+        .catch(error => console.error('Error fetching messages:', error));
+
+      // Update online/last seen status
+      setOnlineStatus(contact.online ? 'Online' : `Last seen at ${contact.lastSeen}`);
+    }
+  }, [contact]);
+
+  const handleSendMessage = () => {
+    if (!newMessage.trim()) return;
+
+    const message = { sender: 'You', content: newMessage, timestamp: new Date().toLocaleTimeString(), status: 'sent' };
+    setMessages([...messages, message]);
+    setNewMessage('');
+
+    // Send message to backend
+    axios.post(`http://127.0.0.1:4001/messages`, {
+      contactId: contact.id,
+      message,
+    })
+    .then(response => {
+      // Update message status to seen if contact viewed it
+      setMessages(prevMessages =>
+        prevMessages.map(msg =>
+          msg === message ? { ...msg, status: response.data.status } : msg
+        )
+      );
+    })
+    .catch(error => console.error('Error sending message:', error));
+  };
+
+  return (
+    <div className="chat-view">
+      {contact ? (
+        <>
+          {/* Chat Header with Profile Picture, Name, and Online Status */}
+          <div className="chat-header">
+            <img src={contact.profilePicture} alt="Profile" className="profile-pic" />
+            <div>
+              <span className="contact-name">{contact.name}</span>
+              <span className="online-status">{onlineStatus}</span>
+            </div>
+            <div className="menu">
+              <button className="three-dot-menu">⋮</button>
+              {/* Menu dropdown could be added here */}
+            </div>
+          </div>
+          
+          {/* Messages Section */}
+          <div className="messages">
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`message ${msg.sender === 'You' ? 'sent' : 'received'}`}
+              >
+                <span>{msg.content}</span>
+                <span className="timestamp">
+                  {msg.timestamp}
+                  {msg.status === 'sent' && ' ✓'}
+                  {msg.status === 'seen' && ' ✓✓'}
+                </span>
+              </div>
+            ))}
+            <div ref={messageEndRef} />
+          </div>
+
+          {/* Message Input Area */}
+          <div className="message-input">
+            <button className="attach-btn">📎</button>
+            <InputEmoji
+              value={newMessage}
+              onChange={setNewMessage}
+              placeholder="Type a message..."
+            />
+            <button className="send-btn" onClick={handleSendMessage}>Send</button>
+          </div>
+        </>
+      ) : (
+        <p>Select a contact to start chatting</p>
+      )}
+    </div>
+  );
+};
+
+export default ChatView;
+
+
+const server = http.createServer(app)
+const io = socketIo(server) // Attach socket.io to the http server
+
+let activeUsers = {}; // Store active users by their socket ids
+
+
+
+import React, { useState, useEffect, useRef } from 'react';
+import InputEmoji from 'react-input-emoji';
+// import io from 'socket.io-client'
+import './ChatView.css';
+
+// const socket = io('http://127.0.0.1:4001'); // Connect to the WebSocket server
+
+const ChatView = ({ contact, authId }) => {
+  const [messages, setMessages] = useState([]);
+  const [newMessage, setNewMessage] = useState('');
+  const [onlineStatus, setOnlineStatus] = useState('');
+  const [chatId, setChatId] = useState(null)
+  const messageContainerRef = useRef(null)
+
+  // // Initialize socket connection
+  // const socket = useRef();
+
+
+  // useEffect(() => {
+  //   // Connect to the socket server
+  //   socket.current = io('http://localhost:4001');  // Make sure to match this with your server address
+
+  //   // Join the room (or channel) specific to this chat
+  //   if (chatId) {
+  //     socket.current.emit('joinChat', chatId);
+  //   }
+
+  //   // Receive new messages from the server
+  //   socket.current.on('receiveMessage', (message) => {
+  //     setMessages((prevMessages) => [...prevMessages, message]);
+  //   });
+
+  //   // Listen for status updates from the backend
+  //   socket.current.on('statusUpdate', (data) => {
+  //     const { messageId, status } = data;
+
+  //     setMessages((prevMessages) =>
+  //       prevMessages.map((msg) =>
+  //         msg._id === messageId ? { ...msg, status } : msg
+  //       )
+  //     );
+  //   })
+
+  //   // Clean up the socket connection when component unmounts
+  //   return () => {
+  //     socket.current.disconnect();
+  //   };
+  // }, [chatId]);
+
+
+
+  useEffect(() => {
+    //Check if a contact is selected
+    if (contact && authId) {
+      // Check if a chat exists between the user and the contact
+      axios.get(`http://127.0.0.1:4001/Chat/allchat/${authId}`)
+        .then(response => {
+          // Find the chat with this contact (check participants)
+          const existingChat = response.data.find(chat =>
+            chat.participants.includes(contact._id)
+          );
+
+          if (existingChat) {
+            // If chat exists, set chatId
+            setChatId(existingChat._id);
+            return axios.get(`http://127.0.0.1:4001/Message/specific/${existingChat._id}`);
+          } else {
+            // If chat does not exist, create a new chat
+            return axios.post('http://127.0.0.1:4001/Chat/newchat', {
+              senderId: authId,
+              receiverId: contact._id,
+            });
+          }
+        })
+        .then(response => {
+          // If a new chat was created, set the chatId
+          if (response.data._id) {
+            setChatId(response.data._id);
+          }
+          // setMessages(response.data);
+
+          // Fetch messages for the chat
+          return axios.get(`http://127.0.0.1:4001/Message/specific/${response.data._id || chatId}`);
+        })
+        .then(response => {
+          setMessages(response.data);  // Set the messages after fetching them
+        })
+        .catch(error => {
+          console.error('Error creating or fetching chat:', error);
+        });
+
+      // Set the online status
+      setOnlineStatus(contact.online ? 'Online' : `Last seen at ${contact.lastSeen}`);
+    }
+  }, [contact, authId,chatId]);
+
+  // Automatically scroll to the bottom when a new message is added
+  useEffect(() => {
+    if (messageContainerRef.current) {
+      messageContainerRef.current.scrollTop = messageContainerRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+
+  // Handle sending a new message
+  const handleSendMessage = () => {
+    if (!newMessage.trim()) return;
+
+    const messageData = {
+      chatId,
+      senderId: authId,
+      content: newMessage,
+    };
+
+    // Send the message to the backend
+    axios.post('http://127.0.0.1:4001/Message/send', message)
+      .then(response => {
+        setMessages([...messages, response.data]);  // Add the new message to the messages list
+        setNewMessage('');  // Clear the message input field
+      })
+      .catch(error => {
+        console.error('Error sending message:', error);
+      });
+    // Emit the message to the server via socket
+    // socket.current.emit('sendMessage', messageData);
+
+    // Optimistically update the UI
+    // setMessages([...messages, messageData]);
+    // setNewMessage('');
+
+    // // Send the message to backend for persistence
+    // axios.post('http://127.0.0.1:4001/Message/send', messageData)
+    //   .catch(error => console.error('Error sending message:', error));
+  };
+
+
+  const renderStatus = (status) => {
+    if (status === 'sent') {
+      return (
+        <span className="message-status">
+          ✓ {/*  {timestamp} */}
+        </span>
+      );
+    } else if (status === 'deliveres') {
+      return (
+        <span className="message-status">
+          ✓✓ {/*  {timestamp} */}
+        </span>
+      );
+    } else if (status === 'read') {
+      return (
+        <span className="message-status">✓✓ (seen)</span>
+      )
+    }
+    return null;
+  };
+
+
+  return (
+    <div className="chat-view">
+      {contact ? (
+        <>
+          <div className="chat-header">
+            <img src={contact.profilePicture} alt="Profile" className="profile-pic" />
+            <div>
+              <span className="contact-name">{contact.name}</span>
+              <span className="online-status">{onlineStatus}</span>
+            </div>
+            <button className="three-dot-menu">⋮</button>
+          </div>
+
+          <div className="messages" ref='messageContainerRef'>
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`message ${msg.sender === authId ? 'sent' : 'received'}`}
+              >
+                <span>{msg.content}</span>
+                <span className="timestamp">{new Date(msg.timestamp).toLocaleDateString()}</span>
+                {renderStatus(msg.status)}
+              </div>
+            ))}
+          </div>
+
+          <div className="message-input">
+            <button className="attach-btn">📎</button>
+            <InputEmoji
+              value={newMessage}
+              onChange={setNewMessage}
+              placeholder="Type a message..."
+            />
+            <button className="send-btn" onClick={handleSendMessage}>Send</button>
+          </div>
+        </>
+      ) : (
+        <p>Select a contact to start chatting</p>
+      )}
+    </div>
+  );
+};
+
+export default ChatView;
+
+

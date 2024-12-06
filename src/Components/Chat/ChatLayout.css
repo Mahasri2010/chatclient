@@ -1,0 +1,109 @@
+
+
+/* Main Layout Container */
+.chat-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* .chat-layout {
+    display: flex;
+    width: 100%; Make sure the layout uses full width
+  } */
+  
+
+  
+  
+  /* Navbar Section: Static on the left */
+  /* .navbar-section {
+    width: 20%;
+    min-width: 300px;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+  } */
+  
+  /* List Section: Displays Chat List or Group List */
+  /* .list-section {
+    width: 30%;
+    min-width: 320px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  } */
+  
+  /* Chat View Section: Main conversation area */
+  /* .chat-view-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #efeae2;
+    position: relative;
+  } */
+  
+  /* Header inside Chat View: Name, profile, and last seen */
+  /* .chat-view-section .chat-header {
+    height: 60px;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+  }  */
+  
+  /* Chat messages container */
+  /* .chat-view-section .messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #d9d9d7;
+  } */
+  
+  /* Message input container at the bottom */
+  /* .chat-view-section .message-input {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+  } */
+  
+   /* .message-input input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+  }  */
+  
+   /* .message-input button {
+    background-color: #075e54;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }  */
+  
+  /* Scrollbar styling */
+  /* .list-section::-webkit-scrollbar,
+  .messages::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .list-section::-webkit-scrollbar-thumb,
+  .messages::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+  }  */
+  
